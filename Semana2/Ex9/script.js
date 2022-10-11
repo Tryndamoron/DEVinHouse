@@ -1,9 +1,13 @@
-let idade = Number(prompt("Qual a sua idade?"))
+let number1 = Number(prompt("Digite um número"))
+let root = Number(prompt("Digite a raiz"))
+let finalProgression = []
 
-if (idade <= 15) {
-    alert("Você é considerado jovem!")
-} else if (idade > 15 && idade <= 64) {
-    alert("Você é considerado um adulto! Dá pra lembrar da TV manchete já")
-} else if (idade > 64) {
-    alert("Você é considerado um idoso!")
+function arythmeticalProgression (number1, root) {
+    for (let i = 0; i < 10; i++) {
+        finalProgression.push(number1)
+        number1 += root
+    }
+    return finalProgression
 }
+
+alert(arythmeticalProgression(number1, root))

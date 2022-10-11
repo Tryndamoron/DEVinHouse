@@ -1,20 +1,16 @@
-let operation = prompt("Qual o cálculo que você deseja fazer? Inputs válidos: +, -, *, /")
-let number1 = Number(prompt("Qual o primeiro número?"))
-let number2 = Number(prompt("Qual o segundo número?"))
+let number = Number(prompt("Digite aqui um número"));
+let even = 0;
+let odd = 0;
 
-switch (operation) {
-    case "+":
-        alert(number1 + number2)
-        break;
-    case "-":
-        alert(number1 - number2)
-        break
-    case "*":
-        alert(number1 * number2)
-        break
-    case "/":
-        alert(number1 / number2)
-        break
-    default:
-        alert("Operador não reconhecido, por favor, recarregue a página e tente novamente")
-}
+function evenodd(number) {
+  for (var i = 0; i <= number; i++) {
+    if (i % 2 == 0) {
+      even++;
+    } else {
+      odd++;
+    }
+  }
+ alert(`A quantidade de ímpares é: ${odd} e a quantidade de pares é: ${even}`)}
+
+
+evenodd(number);

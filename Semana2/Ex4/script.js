@@ -1,16 +1,11 @@
-let number = Number(prompt("Digite aqui um número"));
-let even = 0;
-let odd = 0;
+let number = Number(prompt("Digite um número"))
+let soma = 0
 
-function evenodd(number) {
-  for (var i = 0; i <= number; i++) {
-    if (i % 2 == 0) {
-      even++;
-    } else {
-      odd++;
-    }
-  }
- alert(`A quantidade de ímpares é: ${odd} e a quantidade de pares é: ${even}`)}
+while (number != -1) {
+    soma += number
+    number = Number(prompt("Digite um número"))
+}
 
-
-evenodd(number);
+if (number === -1) {
+    alert(`${soma}`)
+}

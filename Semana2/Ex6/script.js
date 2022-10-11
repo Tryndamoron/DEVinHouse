@@ -1,21 +1,20 @@
-let data = new Date();
-let day = data.getDay();
-let month = data.getMonth();
+let operation = prompt("Qual o cálculo que você deseja fazer? Inputs válidos: +, -, *, /")
+let number1 = Number(prompt("Qual o primeiro número?"))
+let number2 = Number(prompt("Qual o segundo número?"))
 
-function estacao(day, month) {
-  if (month >= 3 && month <= 6) {
-    if (month == 3 && day <= 21) {
-      alert("Estamos no Verão");
-    } else {
-      alert("Estamos no Outono");
-    }
-  } else if (month >= 6 && month <= 12) {
-    if (month == 6 && day > 21) {
-      alert("Estamos no Inverno");
-    } else {
-      alert("Estamos na Primavera");
-    }
-  }
+switch (operation) {
+    case "+":
+        alert(number1 + number2)
+        break;
+    case "-":
+        alert(number1 - number2)
+        break
+    case "*":
+        alert(number1 * number2)
+        break
+    case "/":
+        alert(number1 / number2)
+        break
+    default:
+        alert("Operador não reconhecido, por favor, recarregue a página e tente novamente")
 }
-
-estacao(day,month)

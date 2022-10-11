@@ -1,8 +1,9 @@
-let number = Number(prompt("Digite um número"))
+let idade = Number(prompt("Qual a sua idade?"))
 
-function tabuada (number) {
-    for (var i = 0; i < 11; i++) {
-        alert(number * i)
-    }}
-    
-tabuada(number)
+if (idade <= 15) {
+    alert("Você é considerado jovem!")
+} else if (idade > 15 && idade <= 64) {
+    alert("Você é considerado um adulto! Dá pra lembrar da TV manchete já")
+} else if (idade > 64) {
+    alert("Você é considerado um idoso!")
+}
